@@ -1,0 +1,28 @@
+Sprint 1 (Week 2) Summary & Retrospective
+1. Sprint Overview
+ * Goal: Complete System Analysis, UI Design, and Test Case Planning.
+ * Status: Completed
+ * Key Deliverables: * Use Case Diagram & User Flow Diagram (by ZHAO YU)
+   * Low-fi & High-fi UI Mockups (by ZHAO WEI)
+   * Interactive Figma Prototype (by TEH JING QIAN)
+   * Formal Test Case Document (by Sriman)
+2. Progress Tracking
+ * What we achieved: We successfully translated our User Stories into visual designs. The core flows (Registration, Login, and Search) are now fully mapped out and ready for development.
+ * Timeline Adjustments: Due to our mid-week exam on Thursday (Feb 26), the team paused project work on Wednesday. We resumed full activity on Friday and caught up over the weekend.
+3. Sprint Retrospective (The "Three Pillars")
+ * What went well?
+   * The team maintained great communication despite the exam pressure.
+   * Sriman (QA) provided clear Acceptance Criteria early, which helped the Designers.
+   * Trello boards were kept up-to-date with "Doing" and "Done" statuses.
+ * What didn't go well?
+   * The exam created a 2-day gap in productivity.
+   * Initial confusion regarding the folder structure on GitHub (now resolved).
+ * Improvements for Sprint 2 (Next Week):
+   * Start coding tasks early to handle potential bugs.
+   * Ensure all code commits include descriptive messages.
+4. Team Performance Review
+ *ZHANG XIANGKUN: Managed task distribution, Trello monitoring, and final documentation.
+ *ZHAO YU: Finalized system logic, Use Case, and User Flow diagrams.
+ *ZHAO WEI: Delivered professional Low-fi and High-fi mockups on time.
+ *TEH JING QIAN: Successfully linked the UI designs into a clickable interactive prototype.
+ *Sriman: Established a solid testing framework and verified the prototype usability.
