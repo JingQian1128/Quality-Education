@@ -1,4 +1,4 @@
-# 3. Bug Reports
+#  Bug Reports
 
 ## Bug ID: FB-001
 
