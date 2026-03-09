@@ -29,27 +29,48 @@ The purpose of these tests is to identify usability issues, system errors, and i
 | TC-04        | Login              | User enters incorrect login credentials                     | System should display error message      | Fail   |
 | TC-05        | Identity Selection | User selects Student identity                               | Student option should be highlighted     | Pass   |
 | TC-06        | Search             | User searches for a tutor                                   | Relevant tutor results should appear     | Pass   |
-# 3. Bug Reports
+# # 3. Bug Reports
 
 ## Bug ID: EC-001
 
-**Bug Title:** Math Question Not Displayed Correctly
+**Bug Title:** Registration allows submission with empty required fields
 
 **Description:**
-During testing, the system failed to properly display the math question when users attempted to access the learning content. The mathematical expression appears incorrectly formatted, which may confuse users.
+During testing of the registration feature, the system allowed users to submit the registration form even when required fields were left empty. This indicates that the form validation is not properly enforced.
 
 **Steps to Reproduce:**
 
-1. Open the EduConnect prototype.
-2. Navigate to the learning content section.
-3. Open a math question or exercise.
-4. Observe how the equation is displayed.
+1. Open the EduConnect registration page.
+2. Leave one or more required fields (e.g., email) empty.
+3. Click the **Register** button.
 
 **Expected Result:**
-The math equation should display clearly and correctly formatted.
+The system should prevent form submission and display a validation message such as **“This field is required.”**
 
 **Actual Result:**
-The math question appears incorrectly formatted or difficult to read.
+The system allows the form to be submitted without displaying any validation message.
+
+**Severity Level:** High
+
+---
+
+## Bug ID: EC-002
+
+**Bug Title:** No error message displayed for incorrect login credentials
+
+**Description:**
+When users attempt to log in using incorrect credentials, the system does not display an appropriate error message to inform the user that the login attempt failed.
+
+**Steps to Reproduce:**
+
+1. Open the EduConnect login page.
+2. Enter a registered email with an incorrect password.
+3. Click the **Login** button.
+
+**Expected Result:**
+The system should display an error message such as **“Incorrect email or password.”**
+
+**Actual Result:**
+The login attempt fails but no clear error message is displayed to the user.
 
 **Severity Level:** Medium
-
