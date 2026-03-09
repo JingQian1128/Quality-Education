@@ -1,68 +1,66 @@
-#  Bug Reports
+# . Bug Reports
 
-## Bug ID: FB-001
+## Bug ID: HB-001
 
-**Bug Title:** Star rating does not clearly indicate selected rating
+**Bug Title:** Calendar tab appears disabled in bottom navigation
 
 **Description:**
-When users click on a star to rate the tutoring session, the interface does not clearly highlight which rating has been selected. This may confuse users and make them unsure whether their rating was recorded.
+In the bottom navigation bar, the **Calendar** tab appears faded compared to the Home and Profile icons. This makes it look disabled or inactive.
 
 **Steps to Reproduce:**
 
-1. Open the tutor feedback screen after completing a session.
-2. Locate the star rating section under the text “How was your session with Sarah?”.
-3. Click on any star rating (for example 4 stars).
+1. Open the Home dashboard screen.
+2. Observe the bottom navigation bar.
 
 **Expected Result:**
-The selected star rating should be visually highlighted (e.g., filled stars or color change) to confirm the user's selection.
+All navigation icons should have consistent visibility unless intentionally disabled.
 
 **Actual Result:**
-The stars do not provide clear visual confirmation of the selected rating.
-
-**Severity:** Medium
-
----
-
-## Bug ID: FB-002
-
-**Bug Title:** Feedback can be submitted without entering comments
-
-**Description:**
-The system allows users to submit feedback without typing anything in the feedback text box. This may result in incomplete or unhelpful feedback data.
-
-**Steps to Reproduce:**
-
-1. Open the feedback page.
-2. Leave the "Write your feedback here..." field empty.
-3. Click the **Submit Feedback** button.
-
-**Expected Result:**
-The system should display a validation message such as “Please enter your feedback before submitting.”
-
-**Actual Result:**
-The system allows submission without entering any feedback.
+The Calendar icon appears greyed out, which may confuse users.
 
 **Severity:** Low
 
 ---
 
-## Bug ID: FB-003
+## Bug ID: HB-002
 
-**Bug Title:** “No thanks, skip” option is difficult to notice
+**Bug Title:** Search bar placeholder text has low contrast
 
 **Description:**
-The **“No thanks, skip”** option at the bottom of the screen appears in very light text, making it difficult for users to notice.
+The placeholder text **“Search for subjects…”** in the search bar appears very light, making it difficult to read.
 
 **Steps to Reproduce:**
 
-1. Open the feedback screen.
-2. Look at the bottom section below the submit button.
+1. Open the dashboard screen.
+2. Look at the search bar at the top of the page.
 
 **Expected Result:**
-The skip option should be clearly visible and easy to click.
+Placeholder text should be clearly readable and meet accessibility contrast guidelines.
 
 **Actual Result:**
-The text appears faded and may not be easily noticed.
+The text contrast is low and may reduce readability.
+
+**Severity:** Low
+
+---
+
+## Bug ID: HB-003
+
+**Bug Title:** Tutor rating icon alignment issue
+
+**Description:**
+In the **Top Volunteer Tutors** section, the star icon and rating number (4.9) appear slightly misaligned with the tutor name.
+
+**Steps to Reproduce:**
+
+1. Open the dashboard.
+2. Navigate to the **Top Volunteer Tutors** section.
+
+**Expected Result:**
+Tutor name, rating star, and rating value should be aligned consistently.
+
+**Actual Result:**
+The rating icon appears slightly misaligned compared to the text.
 
 **Severity:** Low
 
