@@ -20,10 +20,12 @@
 
 3. Browse & Search Tutors
 
-   | Test ID  | Test Scenario                                                  | Expected Result                                                                          | Actual Result                                        | Status |
-| -------- | -------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------- | ------ |
-| TC-SR-01 | Search for a subject that exists (e.g., Mathematics)           | System lists relevant tutors for the selected subject.                                   | Relevant tutors were displayed in the results list.  | Pass   |
-| TC-SR-02 | Search for a subject with no tutors available                  | System displays "No results found" message clearly.                                      | System displayed "No tutors available" message.      | Pass   |
-| TC-SR-03 | Search using partial keyword (e.g., Math)                      | System displays tutor results matching the keyword entered.                              | Partial keyword search returned matching tutors.     | Pass   |
-| TC-SR-04 | Search with empty search field                                 | System asks the user to enter a subject or displays all tutors (based on system design). | System displayed all available tutors.               | Pass   |
-| TC-SR-05 | Apply subject filter and additional filter (e.g., price range) | Results update correctly based on selected filters.                                      | Filter applied but results did not update correctly. | Fail   |
+  ### 3. Browse & Search Tutors
+
+| Test ID  | Test Scenario                                                  | Expected Result                                                                          | Actual Result                                                                                        | Status |
+| -------- | -------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ------ |
+| TC-SR-01 | Search for a subject that exists (e.g., Mathematics)           | System lists relevant tutors for the selected subject.                                   | Relevant tutors for Mathematics were displayed in the results list.                                  | Pass   |
+| TC-SR-02 | Search for a subject with no tutors available                  | System displays "No results found" message clearly.                                      | System displayed a message indicating no tutors were available for the selected subject.             | Pass   |
+| TC-SR-03 | Search using partial keyword (e.g., Math)                      | System displays tutor results matching the keyword entered.                              | Tutors related to Mathematics were displayed when the keyword "Math" was entered.                    | Pass   |
+| TC-SR-04 | Search with empty search field                                 | System asks the user to enter a subject or displays all tutors (based on system design). | System displayed all available tutors when the search field was empty.                               | Pass   |
+| TC-SR-05 | Apply subject filter and additional filter (e.g., price range) | Results update correctly based on selected filters.                                      | Filter was applied but tutor results did not update correctly according to the selected price range. | Fail   |
