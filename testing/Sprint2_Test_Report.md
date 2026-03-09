@@ -29,4 +29,27 @@ The purpose of these tests is to identify usability issues, system errors, and i
 | TC-04        | Login              | User enters incorrect login credentials                     | System should display error message      | Fail   |
 | TC-05        | Identity Selection | User selects Student identity                               | Student option should be highlighted     | Pass   |
 | TC-06        | Search             | User searches for a tutor                                   | Relevant tutor results should appear     | Pass   |
+# 3. Bug Reports
+
+## Bug ID: EC-001
+
+**Bug Title:** Math Question Not Displayed Correctly
+
+**Description:**
+During testing, the system failed to properly display the math question when users attempted to access the learning content. The mathematical expression appears incorrectly formatted, which may confuse users.
+
+**Steps to Reproduce:**
+
+1. Open the EduConnect prototype.
+2. Navigate to the learning content section.
+3. Open a math question or exercise.
+4. Observe how the equation is displayed.
+
+**Expected Result:**
+The math equation should display clearly and correctly formatted.
+
+**Actual Result:**
+The math question appears incorrectly formatted or difficult to read.
+
+**Severity Level:** Medium
 
