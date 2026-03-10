@@ -1,4 +1,4 @@
-# 1. Test Objectives
+1. Test Objectives
 
 The objective of this testing process was to evaluate the functionality and usability of the EduConnect mobile application prototype. The testing focused on verifying whether the core features of the system operate correctly and provide a smooth user experience.
 The main features tested include:
@@ -16,8 +16,7 @@ The purpose of these tests is to identify usability issues, system errors, and i
 To verify that students can start or book a tutoring session.
 To ensure that the system properly handles session booking actions.
 The purpose of these tests is to identify usability issues, system errors, and interface problems before the final implementation of the application.
-
-# 2. Test Cases
+2. Test Cases
 
 Test Case ID	Feature Tested	Test Scenario	Expected Result	Result
 TC-01	Login	User enters valid email and password	User should successfully log in and be redirected to the dashboard	Pass
@@ -25,7 +24,6 @@ TC-02	Login	User enters incorrect password	System should display an error messag
 TC-03	Search	User searches for a subject such as "Algebra"	Relevant course or tutor results should appear	Pass
 TC-04	Booking	User clicks the Start button to begin a learning session	Learning session should start successfully	Pass
 TC-05	Quiz	User answers the Algebra quiz question correctly	System should mark the answer as correct	Fail
-
 # 3. Bug Reports
 
 Bug ID: EC-001
@@ -65,4 +63,3 @@ Steps to Reproduce:
 Expected Result: The system should correctly validate the answer and mark it as correct.
 Actual Result: The system incorrectly marks the correct answer as wrong.
 Severity Level: High
-
