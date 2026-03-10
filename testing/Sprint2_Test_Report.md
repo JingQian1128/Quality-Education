@@ -1,111 +1,94 @@
-# 1. Test Objectives
+1. **Test Objectives**
 
-The objective of this testing process was to evaluate the functionality and usability of the EduConnect mobile application prototype. The testing focused on verifying whether the core features of the system operate correctly and provide a smooth user experience.
+This testing process was aimed at testing the functionality and usability of the EduConnect mobile application prototype. The testing was aimed at ensuring that the main features of the system work properly and offer convenient user experience.
 
-The main features tested include:
+The primary characteristics that have been checked are:
 
-**1. Registration**
+1. **Registration**
 
-* To verify that new users can create an account successfully.
-* To ensure that required fields such as email and password are properly captured.
+To ensure that new users are able to create an account with ease.
+To make sure that the necessary fields like email and password are obtained appropriately.
 
-**2. Login**
+2. **Login**
 
-* To check whether existing users can log into the system using valid credentials.
-* To verify that the system handles incorrect login details appropriately.
+To test the ability of the system to accept valid user credentials.
+To confirm that the system responds to erroneous log-in information, correctly.
 
-**3. Search**
+3. **Search**
 
-* To test whether users can search for tutors or learning resources within the platform.
-* To confirm that the search function returns relevant results.
+To determine whether users are able to search the platform in tutor or learning resource.
+In order to verify that the search functionality has found the right results.
+The aim of these tests is to determine the problem in usability, system errors, and interface problem prior to the actual implementation of the application.
 
-The purpose of these tests is to identify usability issues, system errors, and interface problems before the final implementation of the application.
+4. **Booking**
 
-**4. Booking**
+To ensure that students have the ability to start or to book a tutoring session.
 
-To verify that students can start or book a tutoring session.
+To make sure that the system is able to deal with session booking actions.
 
-To ensure that the system properly handles session booking actions.
+These tests are used to find out the usability problems, system errors, and interface problems prior to the ultimate implementation of the application.
 
-The purpose of these tests is to identify usability issues, system errors, and interface problems before the final implementation of the application.
+# 2. Test Cases**
 
-## 2. Test Cases
+Test Case ID	Feature tested	Test scenario	Expected result	Result
+TC-01	Login	User is typing in valid email and password	User would be able to log in and take him or her to the dashboard successfully.
+TC-02	Login	Wrong password is used by the user that should not be allowed to log in and system must show an error message.
+TC-03	Search	The user types something like "Algebra" in the search box and relevant course/tutor should be found.
+TC-04	Booking	User clicks Start button to open learning session	Learning session should open successfully Pass
+TC-05	Quiz	User should get the answer to the question of Algebra quiz correct System should mark the answer as correct Failed.
+# 3. Bug Reports
 
-| Test Case ID | Feature Tested | Test Scenario                                                | Expected Result                                                    | Result |
-| ------------ | -------------- | ------------------------------------------------------------ | ------------------------------------------------------------------ | ------ |
-| TC-01        | Login          | User enters valid email and password                         | User should successfully log in and be redirected to the dashboard | Pass   |
-| TC-02        | Login          | User enters incorrect password                               | System should display an error message and prevent login           | Fail   |
-| TC-03        | Search         | User searches for a subject such as "Algebra"                | Relevant course or tutor results should appear                     | Pass   |
-| TC-04        | Booking        | User clicks the **Start** button to begin a learning session | Learning session should start successfully                         | Pass   |
-| TC-05        | Quiz           | User answers the Algebra quiz question correctly             | System should mark the answer as correct                           | Fail   |
+Bug ID: EC-001
 
-# # 3. Bug Reports
+Bug Title: Entry can be made with empty mandatory fields.
 
-## Bug ID: EC-001
+Description: In testing the registration feature, the system permitted users to use the registration form on occasions in which one left the necessary fields blank. This implies that the form validation is not a well implemented procedure.
 
-**Bug Title:** Registration allows submission with empty required fields
+Steps to Reproduce:
 
-**Description:**
-During testing of the registration feature, the system allowed users to submit the registration form even when required fields were left empty. This indicates that the form validation is not properly enforced.
+Launch EduConnect registration page.
+Leave out one or more mandatory fields (e.g., email).
+Click the Register button.
+Result to Expect: This system ought to submit a form and a validation message should be given like this field is mandatory.
 
-**Steps to Reproduce:**
+Real Life Result: The system enables the form to be submitted without any validation message being shown.
 
-1. Open the EduConnect registration page.
-2. Leave one or more required fields (e.g., email) empty.
-3. Click the **Register** button.
+Severity Level: High
 
-**Expected Result:**
-The system should prevent form submission and display a validation message such as **“This field is required.”**
+Bug ID: EC-002
 
-**Actual Result:**
-The system allows the form to be submitted without displaying any validation message.
+Bug Title: No error message on use of wrong logins.
 
-**Severity Level:** High
+Description: In case the user attempts to log in with wrong credentials, the system fails to issue a relevant error message to make the user aware that the login attempt was unsuccessful.
 
----
+Steps to Reproduce:
 
-## Bug ID: EC-002
+Click the EduConnect log in page.
+Put in a registered email with an invalid password.
+Click the Login button.
+Predicted Outcome: An error message of the type should be shown on the system like: Incorrect email or password.
 
-**Bug Title:** No error message displayed for incorrect login credentials
+Real World Scenario: The user attempts to log in and nothing shows on the screen indicating an error.
 
-**Description:**
-When users attempt to log in using incorrect credentials, the system does not display an appropriate error message to inform the user that the login attempt failed.
+Severity Level: Medium
 
-**Steps to Reproduce:**
+Bug ID: MATH-001
 
-1. Open the EduConnect login page.
-2. Enter a registered email with an incorrect password.
-3. Click the **Login** button.
+Bug Name: Math Quiz Answer validation Logic Error.
 
-**Expected Result:**
-The system should display an error message such as **“Incorrect email or password.”**
+Situation: When testing the Algebra learning module, the system was inaccurate in the evaluation of the answers in the quiz section. The system scans a correct mathematical answer and declares it to be incorrect even when the correct mathematical answer is typed in.
 
-**Actual Result:**
-The login attempt fails but no clear error message is displayed to the user.
+Steps to Reproduce:
 
-**Severity Level:** Medium
+Unzip EduConnect prototype.
+Go into Algebra 101 course.
+Click on the area Quiz 1: Pre-test.
+When the quiz is started, you can press the Start button.
+Write the correct math question answer.
+Submit the answer.
+Expected Result: The system would be able to validate the answer correctly and pose to mark the answer as correct.
 
-## Bug ID: MATH-001
+Factual Findings: The system marks the correct answer wrong.
 
-**Bug Title:** Math Quiz Answer Validation Logic Error
-
-**Description:**
-During testing of the Algebra learning module, the system incorrectly evaluates answers in the quiz section. Even when a correct mathematical answer is entered, the system marks it as incorrect.
-
-**Steps to Reproduce:**
-
-1. Open the EduConnect prototype.
-2. Navigate to the **Algebra 101** course.
-3. Scroll to the **Quiz 1: Pre-test** section.
-4. Click the **Start** button to begin the quiz.
-5. Enter the correct answer to the math question.
-6. Submit the answer.
-
-**Expected Result:**
-The system should correctly validate the answer and mark it as correct.
-
-**Actual Result:**
-The system incorrectly marks the correct answer as wrong.
-
-**Severity Level:** High
+Severity Level: High
 
