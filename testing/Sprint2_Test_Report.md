@@ -20,6 +20,15 @@ The main features tested include:
 * To confirm that the search function returns relevant results.
 
 The purpose of these tests is to identify usability issues, system errors, and interface problems before the final implementation of the application.
+
+**4. Booking**
+
+To verify that students can start or book a tutoring session.
+
+To ensure that the system properly handles session booking actions.
+
+The purpose of these tests is to identify usability issues, system errors, and interface problems before the final implementation of the application.
+
 # 2. Test Results
 
 | Test Case ID | Feature Tested     | Test Scenario                                               | Expected Result                          | Result |
@@ -74,3 +83,28 @@ The system should display an error message such as **“Incorrect email or passw
 The login attempt fails but no clear error message is displayed to the user.
 
 **Severity Level:** Medium
+
+## Bug ID: MATH-001
+
+**Bug Title:** Math Quiz Answer Validation Logic Error
+
+**Description:**
+During testing of the Algebra learning module, the system incorrectly evaluates answers in the quiz section. Even when a correct mathematical answer is entered, the system marks it as incorrect.
+
+**Steps to Reproduce:**
+
+1. Open the EduConnect prototype.
+2. Navigate to the **Algebra 101** course.
+3. Scroll to the **Quiz 1: Pre-test** section.
+4. Click the **Start** button to begin the quiz.
+5. Enter the correct answer to the math question.
+6. Submit the answer.
+
+**Expected Result:**
+The system should correctly validate the answer and mark it as correct.
+
+**Actual Result:**
+The system incorrectly marks the correct answer as wrong.
+
+**Severity Level:** High
+
