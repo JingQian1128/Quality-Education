@@ -29,15 +29,16 @@ To ensure that the system properly handles session booking actions.
 
 The purpose of these tests is to identify usability issues, system errors, and interface problems before the final implementation of the application.
 
-# 2. Test Results
+## 2. Test Cases
 
-| Test Case ID | Feature Tested     | Test Scenario                                               | Expected Result                          | Result |
-| ------------ | ------------------ | ----------------------------------------------------------- | ---------------------------------------- | ------ |
-| TC-01        | Registration       | User enters valid registration details and submits the form | Account should be created successfully   | Pass   |
-| TC-02        | Registration       | User submits form with empty required fields                | System should display validation message | Fail   |
-| TC-04        | Login              | User enters incorrect login credentials                     | System should display error message      | Fail   |
-| TC-05        | Identity Selection | User selects Student identity                               | Student option should be highlighted     | Pass   |
-| TC-06        | Search             | User searches for a tutor                                   | Relevant tutor results should appear     | Pass   |
+| Test Case ID | Feature Tested | Test Scenario                                                | Expected Result                                                    | Result |
+| ------------ | -------------- | ------------------------------------------------------------ | ------------------------------------------------------------------ | ------ |
+| TC-01        | Login          | User enters valid email and password                         | User should successfully log in and be redirected to the dashboard | Pass   |
+| TC-02        | Login          | User enters incorrect password                               | System should display an error message and prevent login           | Fail   |
+| TC-03        | Search         | User searches for a subject such as "Algebra"                | Relevant course or tutor results should appear                     | Pass   |
+| TC-04        | Booking        | User clicks the **Start** button to begin a learning session | Learning session should start successfully                         | Pass   |
+| TC-05        | Quiz           | User answers the Algebra quiz question correctly             | System should mark the answer as correct                           | Fail   |
+
 # # 3. Bug Reports
 
 ## Bug ID: EC-001
